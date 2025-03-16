@@ -1,0 +1,130 @@
+@media screen and (max-width:1000px) {
+    p{
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3{
+        gap: 1rem;
+    }
+
+    .portofolio-tags{
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        flex-wrap: wrap; /* Agar tombol tetap dalam baris */
+        overflow: hidden; /* Mencegah teks keluar */
+        max-width: 100%; /* Agar tidak melebihi batas */
+        justify-content: center;
+    }
+
+    .portofolio-title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:825px) {
+    /* burger */
+    .burger{
+        display: block;
+        cursor: pointer;
+        top: 4.5%;
+        transform: translateY(-50%);
+    }
+
+    .toogle-burger .line-1{
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+
+    .toogle-burger .line-2{
+        opacity: 0;
+    }
+
+    .toogle-burger .line-3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+    
+    /* nav */
+    nav{
+        position: fixed;
+        width: 50%;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        z-index: 9;
+        transform: translateX(150%);
+        transition: .4s ease-in-out;
+    }
+
+    .nav ul{
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active{
+        transform: translateX(0);
+    }
+
+    :root{
+        --sectionPadding: 4rem 0;
+    }
+
+    .section-title{
+        font-size: 1.5rem;
+        margin: 1rem 2.5rem;
+    }
+
+    .pre-title{
+        font-size: .8rem;
+    }
+
+    #hero{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .hero-right{
+        order: -1;
+    }
+
+    .hero-right img{
+        width: 60%;
+        margin-top: 10%;
+    }
+
+    .hero-name{
+        font-size: .9rem;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+
+    .portofolio-tags{
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        flex-wrap: wrap; /* Agar tombol tetap dalam baris */
+        overflow: hidden; /* Mencegah teks keluar */
+        max-width: 100%; /* Agar tidak melebihi batas */
+        justify-content: center;
+    }
+
+    .portofolio-title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+    
+}
