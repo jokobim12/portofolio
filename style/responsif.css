@@ -31,7 +31,7 @@
     .burger{
         display: block;
         cursor: pointer;
-        top: 4.5%;
+        top: 4%;
         transform: translateY(-50%);
     }
 
