@@ -18,6 +18,18 @@
         transform: translateY(-50%);
     }
 
+  .main-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: .8rem;
+        line-height: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    
     .toogle-burger .line-1{
         transform: rotate(-45deg) translate(-5px, 7px);
     }
