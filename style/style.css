@@ -234,7 +234,7 @@ a{
 
 /* Portofolio */
 #portofolio{
-    padding: 6rem;
+    padding: 6rem 0;
     background-color: rgba(223, 223, 223, 0.432);
    
 }
@@ -244,8 +244,6 @@ a{
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.089);
     background-color: white;
-    align-items:left;
-    justify-content:left;
 }
 
 
