@@ -31,7 +31,7 @@
 
     
     .toogle-burger .line-1{
-        transform: rotate(-45deg) translate(-5px, 7px);
+        transform: rotate(-50deg) translate(-5px, 7px);
     }
 
     .toogle-burger .line-2{
@@ -39,7 +39,7 @@
     }
 
     .toogle-burger .line-3{
-        transform: rotate(45deg) translate(-5px, -7px);
+        transform: rotate(50deg) translate(-5px, -7px);
     }
     
     /* nav */
