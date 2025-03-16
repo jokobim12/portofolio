@@ -7,23 +7,6 @@
     .grid-3{
         gap: 1rem;
     }
-
-    .portofolio-tags{
-        display: flex;
-        gap: 1rem;
-        margin: 1rem 0;
-        flex-wrap: wrap; /* Agar tombol tetap dalam baris */
-        overflow: hidden; /* Mencegah teks keluar */
-        max-width: 100%; /* Agar tidak melebihi batas */
-        justify-content: center;
-    }
-
-    .portofolio-title{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        gap: 1rem;
-    }
 }
 
 @media screen and (max-width:825px) {
