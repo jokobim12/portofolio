@@ -121,5 +121,46 @@
 }
 
 @media screen and (max-width:640px) {
+    /* Margiin top */
+
+    #portofolio{
+        padding: 2rem 0;
+    }
+
+    #keahlian{
+        padding: 2rem 0;
+    }
+
+    #layanan{
+        padding: 2rem 0;
+    }
+
+    #kontak{
+        padding: 2rem 0;
+    }
     
+    #tentangkami{
+        padding: 2rem 0;
+        border-top: 1px solid gray;
+    }
+
+    .tentangkami-title{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 1rem;
+        margin-left: 17%;
+        margin-bottom: 1rem;
+    }
+
+    .pre-title{
+        font-size: .7rem;
+    }
+
+    .section-title{
+        font-size: 1rem;
+    }
+
 }
+
+
