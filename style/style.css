@@ -406,10 +406,12 @@ a{
 
 
 /* footer */
-footer{
-    background-color: rgba(223, 223, 223, 0.432);
-    padding:2rem 0;
-    text-align: center;
+
+footer .footer{
+        padding: 1.5rem 0;
+        text-align: center;
+        margin-bottom: 0;
+        background-color: rgba(73, 73, 73, 0.432);
 }
 
 .footer-icon{
