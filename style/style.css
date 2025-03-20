@@ -363,6 +363,7 @@ a{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
+    flex-direction: column;
 }
 
 .kontak-form div{
@@ -462,12 +463,15 @@ footer .footer{
     justify-content: space-between;
     text-align: center;
     gap: 1rem;
+    flex-direction: column;
+
 }
 
 .tentangkami h4{
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 .tentangkami-tags ul li{
@@ -480,7 +484,8 @@ footer .footer{
 .btn-submit{
     margin-top: .5rem;
     font-size: .5rem;
-    width: 100%;
+    width: 20%;
+    height: 50px;
     padding: .5rem .5rem;
     background-color: #2C4E80;
     color: white;
