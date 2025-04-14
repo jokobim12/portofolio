@@ -7,6 +7,7 @@
     <title>Jokobim -  My Portofolio</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsif.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="img/tika.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,7 +74,7 @@
             <h1 class="section-title">Cari tahu lebih lanjut mengenai saya</h1>
             <div class="grid-3">
                 <!-- joko -->
-                <div class="tentangkamiku">
+                <div class="tentangkamiku" data-aos="flip-right">
                     <div class="tentangkami-cover">
                         <img src="img/tentangsaya/saya.jpeg" alt="">
                     </div>
@@ -108,7 +109,7 @@
             <h1 class="section-title">Portofolio Saya</h1>
             <div class="grid-3">
                 <!-- Portofolio 1 -->
-                <div class="portofolioku">
+                <div class="portofolioku"data-aos="zoom-in-down">
                     <div class="portofolio-cover" style="border-bottom: 1px solid grey;">
                         <img src="img/portofolio/webtika.png" alt="p1">
                     </div>
@@ -135,7 +136,7 @@
                 </div>
 
                  <!-- Portofolio 2 -->
-                 <div class="portofolioku">
+                 <div class="portofolioku" data-aos="zoom-in-down">
                     <div class="portofolio-cover" style="border-bottom: 1px solid grey;">
                         <img src="img/portofolio/project-portofolio.png" alt="p2">
                     </div>
@@ -161,8 +162,35 @@
                     </div>
                 </div>
 
-                <!-- Portofolio 3 -->
-                <div class="portofolioku">
+                 <!-- Portofolio 3 -->
+                 <div class="portofolioku" data-aos="zoom-in-down">
+                    <div class="portofolio-cover" style="border-bottom: 1px solid grey;">
+                        <img src="img/portofolio/undangan.png" alt="p1">
+                    </div>
+
+                    <div class="portofolio-info">
+                        <div class="portofolio-title">
+                            <h4>Undangan Digital</h4>
+                            <a href="https://jokobim12.github.io/webkenangan/" class="portofolio-link">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" 
+                                fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M0 2h8l3 3h10v4h3l-4 13h-20v-20zm22.646 8h-17.907l-3.385 11h17.907l3.385-11zm-2.646-1v-3h-9.414l-3-3h-6.586v15.75l3-9.75h16z"/></svg>
+                            </a>
+                        </div>
+
+                        <div class="portofolio-tags">
+                            <div>Javascript</div>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                        </div>
+
+                        <p style="text-align: justify;">Membuat undangan pernikahan digital menggunakan HTML, CSS dan Javascript.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Portofolio 4 -->
+                <div class="portofolioku" data-aos="zoom-in-down">
                     <div class="portofolio-cover" style="border-bottom: 1px solid grey;">
                         <img src="img/portofolio/tkj.png" alt="p1">
                     </div>
@@ -201,7 +229,7 @@
             <div class="grid-3">
 
                 <!-- Keahlian 1 -->
-                <div class="keahlianku">
+                <div class="keahlianku" data-aos="zoom-in-up">
                     <div class="keahlian-cover">
                         <img src="img/keahlian/desain.png" alt="">
                     </div>
@@ -217,7 +245,7 @@
                 </div>
                 
                  <!-- Keahlian 2 -->
-                 <div class="keahlianku">
+                 <div class="keahlianku" data-aos="zoom-in-up">
                     <div class="keahlian-cover">
                         <img src="img/keahlian/coding.png" alt="">
                     </div>
@@ -233,7 +261,7 @@
                 </div>
 
                 <!-- Keahlian 3 -->
-                <div class="keahlianku">
+                <div class="keahlianku" data-aos="zoom-in-up">
                     <div class="keahlian-cover">
                         <img src="img/keahlian/sepak.jpeg" alt="" style="height: 150%;">
                     </div>
@@ -249,7 +277,7 @@
                 </div>
 
                  <!-- Keahlian 4 -->
-                <div class="keahlianku">
+                <div class="keahlianku" data-aos="zoom-in-up">
                     <div class="keahlian-cover">
                         <img src="img/keahlian/gambar.png" alt="">
                     </div>
@@ -275,7 +303,8 @@
 
             <div class="grid-3">
                 <!-- Layanan 1 -->
-                <div class="layananku">
+                <div class="layananku" data-aos="fade-up"
+                data-aos-duration="3000">
                     <div class="layanan-icon">
                   <img src="img/web-design (1).png" alt="ui" style="height: 40px; width: 40px;">
                 </div>
@@ -284,7 +313,8 @@
             </div>
 
              <!-- Layanan 2 -->
-             <div class="layananku">
+             <div class="layananku" data-aos="fade-up"
+             data-aos-duration="3000">
                 <div class="layanan-icon">
               <img src="img/software-development.png" alt="ui" style="height: 40px; width: 40px;">
             </div>
@@ -293,7 +323,8 @@
         </div>
 
              <!-- Layanan 3 -->
-             <div class="layananku">
+             <div class="layananku" data-aos="fade-up"
+             data-aos-duration="3000">
                 <div class="layanan-icon">
               <img src="img/ux-design.png" alt="ui" style="height: 40px; width: 40px;">
             </div>
@@ -371,5 +402,9 @@
          <!-- footer selesai -->
 
         <script src="script/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 </html>
