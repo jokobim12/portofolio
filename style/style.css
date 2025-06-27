@@ -116,7 +116,7 @@ a{
     top: 0;
     left: 0;
     width: 100%; /* Pastikan navbar tetap memenuhi lebar layar */
-    background-color: rgba(255, 255, 255, 0.493); /* Sesuaikan dengan desain */
+    background-color: rgba(253, 253, 253, 0.534);
     padding: 15px 50px;
     display: flex;
     justify-content: space-between; /* Membuat elemen rata kanan dan kiri */
@@ -356,54 +356,90 @@ a{
 }
 
 /* Kontak */
-#kontak{
-    padding: 6rem 0;
+.section-kontak {
+  padding: 60px 20px;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.kontak{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-    flex-direction: column;
+.section-kontak .pre-title {
+  font-size: 18px;
+  color: #4f46e5;
+  margin-left: 5%;
+  margin-bottom: 8px;
 }
 
-.kontak-form div{
-    margin-bottom: 1.4rem;
+.section-kontak .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-left: 6%;
+  margin-bottom: 40px;
 }
 
-.kontak-form input, .kontak-form textarea{
-    width: 100%;
-    padding: .75rem 1.4rem;
-    font-family: "Poppins", sans-serif;
-    background-color: rgba(182, 182, 182, 0.158);
-    border: 1px solid rgba(160, 160, 160, 0.192);
-    border-radius: 3px;
-    resize: none;
+.kontak.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.kontak-form input::placeholder, .kontak-form textarea::placeholder{
-    color: rgb(170, 170, 170);
+.kontak-left,
+.kontak-right {
+  flex: 1 1 45%;
 }
 
-.kontak-form input:focus, .kontak-form textarea:focus{
-    outline: none;
-    border: 1px solid rgb(107, 107, 107);
+/* Form */
+.kontak-form input,
+.kontak-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
 }
 
-.submit{
-    width: 100%;
-    padding: .75rem 1.5rem;
-    background-color:#2C4E80;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    font-family: "Poppins", sans-serif;
+.kontak-form .submit {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.submit:hover{
-    background-color: rgb(0, 0, 58);
+.kontak-form .submit:hover {
+  background-color: #3730a3;
+}
+
+/* Tabel Kontak */
+.tabel-kontak {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px rgba(0, 0, 0, 0.253) solid;
+}
+
+.tabel-kontak th,
+.tabel-kontak td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tabel-kontak th {
+  background-color: #f9fafb;
+  color: #333;
+  width: 150px;
+  font-weight: 600;
 }
 
 
@@ -426,81 +462,64 @@ a{
     margin: 0 .5rem;
 }
 
-/* tentang saya */
-#tentangkami{
-    padding: 6rem 0;
-    background-color: rgba(255, 255, 255, 0.432);
-   
+.section-tentangsaya {
+  background-color: #f9fafb;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.tentangkamiku{
-    border-radius: .5rem;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.089);
-    background-color: white;
-    justify-content: left;
-    margin-bottom: 2rem;
+.container {
+  max-width: 500px;
+  margin: auto;
 }
 
-
-.tentangkami-cover{
-    height: 50%;
+.profile-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px rgba(0, 0, 0, 0.253) solid;
+  text-align: center;
 }
 
-.tentangkami-cover img{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: inline-block;
-    filter: grayscale(70%);
-    text-align: center;
+.profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 24px;
 }
 
-.tentangkami-info{
-    padding: 2rem 1.5rem;
-
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
 }
 
-.tentangkami-title{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    gap: 1rem;
-    flex-direction: column;
-
+.profile-table th,
+.profile-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 15px;
+  color: #444;
 }
 
-.tentangkami h4{
-    font-weight: 700;
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+.profile-table th {
+  width: 40%;
+  font-weight: 600;
+  color: #222;
 }
 
-.tentangkami-tags ul li{
-    list-style: none;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-
+.btn-detail {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.btn-submit{
-    margin-top: .5rem;
-    font-size: 1rem;
-    width: 50%;
-    height: 50px;
-    padding: .5rem .5rem;
-    background-color: #2C4E80;
-    color: white;
-    border: none;
-    border-radius: .5rem;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-}
-
-.btn-submit:hover{
-    background-color: #2e121f;
+.btn-detail:hover {
+  background-color: #3730a3;
 }
