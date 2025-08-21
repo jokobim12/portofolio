@@ -36,3 +36,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Ambil semua link navbar yang menuju section
+  const navLinks = document.querySelectorAll('.nav ul li a');
+  const sections = [];
+
+  navLinks.forEach(link => {
+    const id = link.getAttribute('href');
+    if (id.startsWith('#')) {
+      const section = document.querySelector(id);
+      if (section) sections.push(section);
+    }
+  });
+
+  function activateLink() {
+    let index = sections.length;
+
+    while (--index >= 0) {
+      // 80 = offset jika navbarmu fixed. Ubah sesuai tinggi nav.
+      if (window.scrollY + 90 >= sections[index].offsetTop) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks[index].classList.add('active');
+        break;
+      }
+    }
+  }
+
+  window.addEventListener('scroll', activateLink);
+  // Jalankan sekali saat load
+  activateLink();
+});
+
